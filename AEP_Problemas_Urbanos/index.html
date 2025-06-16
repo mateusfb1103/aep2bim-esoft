@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas Urbanos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sistema de Gestão de Problemas Urbanos</h1>
+
+        <form id="form-problema">
+            <h2>Cadastrar Novo Problema</h2>
+            <div class="form-group">
+                <label for="titulo">Título do Problema</label>
+                <input type="text" id="titulo" placeholder="Ex: Buraco na rua" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" rows="4" placeholder="Ex: Há um grande buraco na Rua Principal, 123" required></textarea>
+            </div>
+            <button type="submit">Cadastrar Problema</button>
+        </form>
+
+        <div class="lista-container">
+            <h2>Problemas Cadastrados</h2>
+            <div id="lista-problemas">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
